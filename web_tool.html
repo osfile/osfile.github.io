@@ -72,7 +72,7 @@ h1 {
 }
 
 .link-list.active {
-  max-height: 200px;
+  max-height: 100%;
 }
 </style>
   </head>
@@ -81,8 +81,8 @@ h1 {
       <h1>Web Tools</h1>
       
       
-      <button class="expand-button" onclick="toggleList()">Grapic Tools</button>
-      <ul class="link-list" id="link-list">
+      <button class="expand-button" onclick="toggleList(link-list1)">Grapic Tools</button>
+      <ul class="link-list" id="link-list1">
         <li><a target="_blank" href="https://www.istockphoto.com/search/2/image?phrase=rocket">istockphoto-photo database</a></li>
         <li><a target="_blank" href="https://cssgradient.io/">cssgradient-color picker</a></li>
         <li><a target="_blank" href="https://www.remove.bg/">remove.bg-dg remove</a></li>
@@ -98,8 +98,8 @@ h1 {
         
       </ul>
       
-       <button class="expand-button" onclick="toggleList()">Torrents</button>
-      <ul class="link-list" id="link-list">
+       <button class="expand-button" onclick="toggleList(link-list2)">Torrents</button>
+      <ul class="link-list" id="link-list2">
         <li><a target="_blank" href="https://www.1377x.to/">1377x</a></li>
         <li><a target="_blank" href="https://webtor.io/#/en/">webtor.iot</a></li>
         <li><a target="_blank" href="https://www.seedr.cc/files">seedr.cc</a></li>
@@ -111,8 +111,8 @@ h1 {
       
     </div>
     <script>
-      function toggleList() {
-  var linkList = document.getElementById("link-list");
+      function toggleList(op) {
+  var linkList = document.getElementById(op);
   linkList.classList.toggle("active");
 }
 
