@@ -81,7 +81,7 @@ h1 {
       <h1>Web Tools</h1>
       
       
-      <button class="expand-button" onclick="toggleList(link-list1)">Grapic Tools</button>
+      <button class="expand-button" onclick="toggleList(this, 'link-list1')">Grapic Tools</button>
       <ul class="link-list" id="link-list1">
         <li><a target="_blank" href="https://www.istockphoto.com/search/2/image?phrase=rocket">istockphoto-photo database</a></li>
         <li><a target="_blank" href="https://cssgradient.io/">cssgradient-color picker</a></li>
@@ -98,7 +98,7 @@ h1 {
         
       </ul>
       
-       <button class="expand-button" onclick="toggleList(link-list2)">Torrents</button>
+       <button class="expand-button" onclick="toggleList(this, 'link-list2')">Torrents</button>
       <ul class="link-list" id="link-list2">
         <li><a target="_blank" href="https://www.1377x.to/">1377x</a></li>
         <li><a target="_blank" href="https://webtor.io/#/en/">webtor.iot</a></li>
@@ -111,14 +111,11 @@ h1 {
       
     </div>
     <script>
-      function toggleList(op) {
-  var linkList = document.getElementById(op);
+      function toggleList(element, ides) {
+  var linkList = document.getElementById(ides);
   linkList.classList.toggle("active");
 }
 
     </script>
   </body>
 </html>
-
-
-
